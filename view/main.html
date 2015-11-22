@@ -1,0 +1,23 @@
+<template name="main">
+<main>
+    {{# each posts }}
+        {{> homePost }}
+    {{/ each }}
+</main>
+</template>
+
+<template name="homePost">
+<article>
+    <img src="{{ image.url }}"/>
+    <a href="{{ pathFor 'post' }}">
+        <h1>{{ title }}</h1>
+    </a>
+    {{# each hashtag }}
+        {{ this }}
+    {{/ each }}
+</article>
+</template>
+
+<template name="hashtag">
+    <span>{{ tag }}</span>
+</template>

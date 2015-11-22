@@ -1,0 +1,8 @@
+<template name="header">
+    <h1><a href="{{ pathFor 'main' }}">Vincent</a></h1>
+    <nav>
+        {{# each hashtags }}
+        <span>{{ title }}</span>
+        {{/ each }}
+    </nav>
+</template>

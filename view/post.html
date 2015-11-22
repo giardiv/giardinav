@@ -1,0 +1,10 @@
+<template name="post">
+<article>
+    <h1>{{ post.title }}</h1>
+    {{# each hashtag }}
+    <span>{{ this }}</span>
+    {{/ each }}
+    <img src="{{ post.image.url }}"/>
+    {{{ post.body }}}
+</article>
+</template>
